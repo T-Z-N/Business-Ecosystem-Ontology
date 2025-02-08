@@ -283,6 +283,12 @@
     <!-- https://purl.org/beo#FirstTierSupplier -->
 
     <owl:Class rdf:about="https://purl.org/beo#FirstTierSupplier">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
