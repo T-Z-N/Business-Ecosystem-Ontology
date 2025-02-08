@@ -714,29 +714,27 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
                         <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
                         <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
+            </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
