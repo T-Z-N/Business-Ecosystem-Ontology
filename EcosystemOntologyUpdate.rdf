@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129/"
-     xml:base="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129/"
+<rdf:RDF xmlns="https://purl.org/beo"
+     xml:base="https://purl.org/beo"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:untitled-ontology-129="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129"/>
+    <owl:Ontology rdf:about="https://purl.org/beo"/>
     
 
 
@@ -22,126 +22,105 @@
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith -->
+    <!-- https://purl.org/beo#collaboratesWith -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith">
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#collaboratesWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/beo#competesWith -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#competesWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/beo#conflictsWith -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#conflictsWith">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#competesWith -->
+    <!-- https://purl.org/beo#deliversTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#competesWith">
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#deliversTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#conflictsWith -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#conflictsWith">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
+        <owl:inverseOf rdf:resource="https://purl.org/beo#receivesFrom"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo -->
+    <!-- https://purl.org/beo#givesDataTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo">
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#givesDataTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
+        <owl:inverseOf rdf:resource="https://purl.org/beo#receivesDataFrom"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo -->
+    <!-- https://purl.org/beo#givesInformationTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo">
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#givesInformationTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#manufacture -->
+    <!-- https://purl.org/beo#manufacture -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#manufacture">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo">
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#manufacture">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#productDelivery -->
+    <!-- https://purl.org/beo#paidBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#productDelivery">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#provides -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#provides">
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#paidBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:comment>Service Or Product</rdfs:comment>
+        <owl:inverseOf rdf:resource="https://purl.org/beo#paysTo"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom -->
+    <!-- https://purl.org/beo#paysTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom">
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#paysTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom -->
+    <!-- https://purl.org/beo#receivesDataFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom">
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#receivesDataFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom -->
+    <!-- https://purl.org/beo#receivesFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom">
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#receivesFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#serviceDelivery -->
+    <!-- https://purl.org/beo#receivesInformationFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#serviceDelivery">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
+    <owl:ObjectProperty rdf:about="https://purl.org/beo#receivesInformationFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -157,430 +136,462 @@
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AcademicOrganization -->
+    <!-- https://purl.org/beo#AcademicOrganization -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AcademicOrganization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Non-ProfitOrganization"/>
+    <owl:Class rdf:about="https://purl.org/beo#AcademicOrganization">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Non-ProfitOrganization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AdditiveProvider -->
+    <!-- https://purl.org/beo#AdditiveProvider -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AdditiveProvider">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#AdditiveProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AutomationSoftwareCompany -->
+    <!-- https://purl.org/beo#AutomationSoftwareCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AutomationSoftwareCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
+    <owl:Class rdf:about="https://purl.org/beo#AutomationSoftwareCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#SoftwareCompany"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BearingManufacturer -->
+    <!-- https://purl.org/beo#BearingManufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BearingManufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#BearingManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BladeManufacturer -->
+    <!-- https://purl.org/beo#BladeManufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BladeManufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#BladeManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BusinessProcessConsultantCompany -->
+    <!-- https://purl.org/beo#BusinessProcessConsultantCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BusinessProcessConsultantCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConsultantCompany"/>
+    <owl:Class rdf:about="https://purl.org/beo#BusinessProcessConsultantCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#ConsultantCompany"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company -->
+    <!-- https://purl.org/beo#Company -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Organization"/>
+    <owl:Class rdf:about="https://purl.org/beo#Company">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ComponentManufacturer -->
+    <!-- https://purl.org/beo#ComponentManufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ComponentManufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#ComponentManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#CompositeMaterialManufacturer -->
+    <!-- https://purl.org/beo#CompositeMaterialManufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#CompositeMaterialManufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#NacelleManufacturer"/>
+    <owl:Class rdf:about="https://purl.org/beo#CompositeMaterialManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#NacelleManufacturer"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConditionMonitoringServiceProvider -->
+    <!-- https://purl.org/beo#ConditionMonitoringServiceProvider -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConditionMonitoringServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#ConditionMonitoringServiceProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConsultantCompany -->
+    <!-- https://purl.org/beo#ConsultantCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConsultantCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#ConsultantCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#CustomerRelationManagementSoftwareCompany -->
+    <!-- https://purl.org/beo#CustomerRelationManagementSoftwareCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#CustomerRelationManagementSoftwareCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
+    <owl:Class rdf:about="https://purl.org/beo#CustomerRelationManagementSoftwareCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#SoftwareCompany"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#DevelopmentEnvironmentSoftwareCompany -->
+    <!-- https://purl.org/beo#DevelopmentEnvironmentSoftwareCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#DevelopmentEnvironmentSoftwareCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
+    <owl:Class rdf:about="https://purl.org/beo#DevelopmentEnvironmentSoftwareCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#SoftwareCompany"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#DistributionSystemOperator -->
+    <!-- https://purl.org/beo#DistributionSystemOperator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#DistributionSystemOperator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GridOperator"/>
+    <owl:Class rdf:about="https://purl.org/beo#DistributionSystemOperator">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#GridOperator"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ElectricMotorManufacturer -->
+    <!-- https://purl.org/beo#ElectricMotorManufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ElectricMotorManufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#ElectricMotorManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#EnergyServiceProvider -->
+    <!-- https://purl.org/beo#EnergyServiceProvider -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#EnergyServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#EnergyServiceProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#EngineeringConsultantCompany -->
+    <!-- https://purl.org/beo#EngineeringConsultantCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#EngineeringConsultantCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConsultantCompany"/>
+    <owl:Class rdf:about="https://purl.org/beo#EngineeringConsultantCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#ConsultantCompany"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#FirstTierSupplier -->
+    <!-- https://purl.org/beo#FirstOrderCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#FirstTierSupplier">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#FirstOrderCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#FundingInstitute -->
+    <!-- https://purl.org/beo#FirstTierSupplier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#FundingInstitute">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Institute"/>
+    <owl:Class rdf:about="https://purl.org/beo#FirstTierSupplier">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentAgency -->
+    <!-- https://purl.org/beo#FourthOrderCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentAgency">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Non-ProfitOrganization"/>
+    <owl:Class rdf:about="https://purl.org/beo#FourthOrderCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentInstitute -->
+    <!-- https://purl.org/beo#FundingInstitute -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentInstitute">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Institute"/>
+    <owl:Class rdf:about="https://purl.org/beo#FundingInstitute">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Institute"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GridOperator -->
+    <!-- https://purl.org/beo#GovermentAgency -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GridOperator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Operator"/>
+    <owl:Class rdf:about="https://purl.org/beo#GovermentAgency">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Non-ProfitOrganization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Institute -->
+    <!-- https://purl.org/beo#GovermentInstitute -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Institute">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Non-ProfitOrganization"/>
+    <owl:Class rdf:about="https://purl.org/beo#GovermentInstitute">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Institute"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#InvestingCompany -->
+    <!-- https://purl.org/beo#GridOperator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#InvestingCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#GridOperator">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Operator"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LawInstitute -->
+    <!-- https://purl.org/beo#Institute -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LawInstitute">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Institute"/>
+    <owl:Class rdf:about="https://purl.org/beo#Institute">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Non-ProfitOrganization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LubricantManufacturer -->
+    <!-- https://purl.org/beo#InvestingCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LubricantManufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#InvestingCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LubricantProvider -->
+    <!-- https://purl.org/beo#LawInstitute -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LubricantProvider">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#LawInstitute">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Institute"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#NacelleManufacturer -->
+    <!-- https://purl.org/beo#LubricantManufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#NacelleManufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#LubricantManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Non-ProfitOrganization -->
+    <!-- https://purl.org/beo#LubricantProvider -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Non-ProfitOrganization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Organization"/>
+    <owl:Class rdf:about="https://purl.org/beo#LubricantProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM -->
+    <!-- https://purl.org/beo#NacelleManufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#NacelleManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Object -->
+    <!-- https://purl.org/beo#Non-ProfitOrganization -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Object"/>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Operator -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Operator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#Non-ProfitOrganization">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Organization -->
+    <!-- https://purl.org/beo#OEM -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Organization"/>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#PoliticalInstitute -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#PoliticalInstitute">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Institute"/>
+    <owl:Class rdf:about="https://purl.org/beo#OEM">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#PrivateOwner -->
+    <!-- https://purl.org/beo#Object -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#PrivateOwner">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#Object"/>
+    
+
+
+    <!-- https://purl.org/beo#Operator -->
+
+    <owl:Class rdf:about="https://purl.org/beo#Operator">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Public -->
+    <!-- https://purl.org/beo#Organization -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Public">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Non-ProfitOrganization"/>
+    <owl:Class rdf:about="https://purl.org/beo#Organization"/>
+    
+
+
+    <!-- https://purl.org/beo#PoliticalInstitute -->
+
+    <owl:Class rdf:about="https://purl.org/beo#PoliticalInstitute">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Institute"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#RawMaterialProducer -->
+    <!-- https://purl.org/beo#PrivateOwner -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#RawMaterialProducer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#PrivateOwner">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Regulator -->
+    <!-- https://purl.org/beo#Public -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Regulator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Non-ProfitOrganization"/>
+    <owl:Class rdf:about="https://purl.org/beo#Public">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Non-ProfitOrganization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ServiceProvider -->
+    <!-- https://purl.org/beo#RawMaterialProducer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ServiceProvider">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#RawMaterialProducer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany -->
+    <!-- https://purl.org/beo#Regulator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#Regulator">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Non-ProfitOrganization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwarePlatformCompany -->
+    <!-- https://purl.org/beo#SecondOrderCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwarePlatformCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
+    <owl:Class rdf:about="https://purl.org/beo#SecondOrderCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartManufacturer -->
+    <!-- https://purl.org/beo#ServiceProvider -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartManufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#ServiceProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartProvider -->
+    <!-- https://purl.org/beo#SoftwareCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartProvider">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#SoftwareCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#StandartizationCompany -->
+    <!-- https://purl.org/beo#SoftwarePlatformCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#StandartizationCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#SoftwarePlatformCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#SoftwareCompany"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SteelManufacturer -->
+    <!-- https://purl.org/beo#SparePartManufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SteelManufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#SparePartManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SustainabilitySoftwarePlatformCompany -->
+    <!-- https://purl.org/beo#SparePartProvider -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SustainabilitySoftwarePlatformCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwarePlatformCompany"/>
+    <owl:Class rdf:about="https://purl.org/beo#SparePartProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SystemIntegrator -->
+    <!-- https://purl.org/beo#StandartizationCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SystemIntegrator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#StandartizationCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#TransmissionSystemOperator -->
+    <!-- https://purl.org/beo#SteelManufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#TransmissionSystemOperator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GridOperator"/>
+    <owl:Class rdf:about="https://purl.org/beo#SteelManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#University -->
+    <!-- https://purl.org/beo#SustainabilitySoftwarePlatformCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#University">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Non-ProfitOrganization"/>
+    <owl:Class rdf:about="https://purl.org/beo#SustainabilitySoftwarePlatformCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#SoftwarePlatformCompany"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindResourceConsultingCompany -->
+    <!-- https://purl.org/beo#SystemIntegrator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindResourceConsultingCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#EngineeringConsultantCompany"/>
+    <owl:Class rdf:about="https://purl.org/beo#SystemIntegrator">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbine -->
+    <!-- https://purl.org/beo#ThirdOrderCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Object"/>
+    <owl:Class rdf:about="https://purl.org/beo#ThirdOrderCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineOperator -->
+    <!-- https://purl.org/beo#TransmissionSystemOperator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineOperator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#TransmissionSystemOperator">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#GridOperator"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineOwner -->
+    <!-- https://purl.org/beo#University -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineOwner">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#University">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Non-ProfitOrganization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineProjectDeveloper -->
+    <!-- https://purl.org/beo#WindResourceConsultingCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineProjectDeveloper">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#WindResourceConsultingCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#EngineeringConsultantCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#WindTurbine -->
+
+    <owl:Class rdf:about="https://purl.org/beo#WindTurbine">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#WindTurbineOperator -->
+
+    <owl:Class rdf:about="https://purl.org/beo#WindTurbineOperator">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#WindTurbineOwner -->
+
+    <owl:Class rdf:about="https://purl.org/beo#WindTurbineOwner">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#WindTurbineProjectDeveloper -->
+
+    <owl:Class rdf:about="https://purl.org/beo#WindTurbineProjectDeveloper">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
@@ -596,21 +607,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company0 -->
+    <!-- https://purl.org/beo#Company0 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company0">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#EngineeringConsultantCompany"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartProvider"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company0">
+        <rdf:type rdf:resource="https://purl.org/beo#EngineeringConsultantCompany"/>
+        <rdf:type rdf:resource="https://purl.org/beo#SparePartProvider"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ComponentManufacturer"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ComponentManufacturer"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -619,80 +630,82 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ServiceProvider"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineOwner"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOwner"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartManufacturer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartManufacturer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SparePartManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ServiceProvider"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SparePartManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartManufacturer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartManufacturer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SparePartManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartManufacturer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SparePartManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SparePartManufacturer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SparePartManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SparePartManufacturer"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company1 -->
+    <!-- https://purl.org/beo#Company1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AutomationSoftwareCompany"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company1">
+        <rdf:type rdf:resource="https://purl.org/beo#AutomationSoftwareCompany"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#DistributionSystemOperator"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#DistributionSystemOperator"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#TransmissionSystemOperator"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#TransmissionSystemOperator"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -701,12 +714,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SystemIntegrator"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -715,89 +728,89 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SystemIntegrator"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SystemIntegrator"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#CustomerRelationManagementSoftwareCompany"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#CustomerRelationManagementSoftwareCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SystemIntegrator"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#DevelopmentEnvironmentSoftwareCompany"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#DevelopmentEnvironmentSoftwareCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#CustomerRelationManagementSoftwareCompany"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#CustomerRelationManagementSoftwareCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company2 -->
+    <!-- https://purl.org/beo#Company2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConditionMonitoringServiceProvider"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company2">
+        <rdf:type rdf:resource="https://purl.org/beo#ConditionMonitoringServiceProvider"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company3 -->
+    <!-- https://purl.org/beo#Company3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LubricantManufacturer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LubricantProvider"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company3">
+        <rdf:type rdf:resource="https://purl.org/beo#LubricantManufacturer"/>
+        <rdf:type rdf:resource="https://purl.org/beo#LubricantProvider"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#FirstTierSupplier"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#FirstTierSupplier"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ServiceProvider"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -806,26 +819,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ServiceProvider"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineOperator"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ServiceProvider"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOperator"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -834,12 +833,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ServiceProvider"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -848,56 +847,70 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ServiceProvider"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineOperator"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOperator"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AdditiveProvider"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#AdditiveProvider"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#competesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LubricantProvider"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#LubricantProvider"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company4 -->
+    <!-- https://purl.org/beo#Company4 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#CompositeMaterialManufacturer"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company4">
+        <rdf:type rdf:resource="https://purl.org/beo#CompositeMaterialManufacturer"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BladeManufacturer"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#BladeManufacturer"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#NacelleManufacturer"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#NacelleManufacturer"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -906,34 +919,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BladeManufacturer"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#BladeManufacturer"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#NacelleManufacturer"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#NacelleManufacturer"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BladeManufacturer"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#NacelleManufacturer"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -942,30 +937,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#EngineeringConsultantCompany"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#BladeManufacturer"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#RawMaterialProducer"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BladeManufacturer"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#NacelleManufacturer"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#NacelleManufacturer"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -974,58 +955,90 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#BusinessProcessConsultantCompany"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#EngineeringConsultantCompany"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConsultantCompany"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#RawMaterialProducer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#BladeManufacturer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#NacelleManufacturer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#BusinessProcessConsultantCompany"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ConsultantCompany"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#competesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SustainabilitySoftwarePlatformCompany"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SustainabilitySoftwarePlatformCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#conflictsWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SustainabilitySoftwarePlatformCompany"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SustainabilitySoftwarePlatformCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#RawMaterialProducer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#RawMaterialProducer"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company5 -->
+    <!-- https://purl.org/beo#Company5 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindResourceConsultingCompany"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company5">
+        <rdf:type rdf:resource="https://purl.org/beo#WindResourceConsultingCompany"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentInstitute"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentInstitute"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#InvestingCompany"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#InvestingCompany"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1034,26 +1047,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentInstitute"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentInstitute"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#InvestingCompany"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SteelManufacturer"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#InvestingCompany"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1062,129 +1061,143 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SteelManufacturer"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#SteelManufacturer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#SteelManufacturer"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#conflictsWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentInstitute"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentInstitute"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentInstitute"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentInstitute"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company6 -->
+    <!-- https://purl.org/beo#Company6 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ElectricMotorManufacturer"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company6">
+        <rdf:type rdf:resource="https://purl.org/beo#ElectricMotorManufacturer"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#conflictsWith"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#LawInstitute"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#LawInstitute"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#conflictsWith"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Regulator"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#Regulator"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#StandartizationCompany"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#StandartizationCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#competesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ElectricMotorManufacturer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ElectricMotorManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#RawMaterialProducer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#RawMaterialProducer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#RawMaterialProducer"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#RawMaterialProducer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentAgency"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentAgency"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company7 -->
+    <!-- https://purl.org/beo#Company7 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company7">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#EnergyServiceProvider"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineProjectDeveloper"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company7">
+        <rdf:type rdf:resource="https://purl.org/beo#EnergyServiceProvider"/>
+        <rdf:type rdf:resource="https://purl.org/beo#WindTurbineProjectDeveloper"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentAgency"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentAgency"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#PoliticalInstitute"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#PoliticalInstitute"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1193,12 +1206,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConsultantCompany"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ConsultantCompany"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#PrivateOwner"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#PrivateOwner"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1207,156 +1220,156 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#ConsultantCompany"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#ConsultantCompany"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentAgency"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentAgency"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineProjectDeveloper"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineProjectDeveloper"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#competesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineProjectDeveloper"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineProjectDeveloper"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#conflictsWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentAgency"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentAgency"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#DistributionSystemOperator"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#DistributionSystemOperator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentAgency"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentAgency"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#DistributionSystemOperator"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#DistributionSystemOperator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentAgency"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentAgency"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company8 -->
+    <!-- https://purl.org/beo#Company8 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company8">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#WindTurbineOperator"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company8">
+        <rdf:type rdf:resource="https://purl.org/beo#WindTurbineOperator"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GridOperator"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#GridOperator"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#SoftwareCompany"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#competesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Operator"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GridOperator"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GridOperator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GridOperator"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GridOperator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paysTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company9 -->
+    <!-- https://purl.org/beo#Company9 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company9">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#University"/>
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Company9">
+        <rdf:type rdf:resource="https://purl.org/beo#University"/>
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AcademicOrganization"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#AcademicOrganization"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#collaboratesWith"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#Company"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1365,30 +1378,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AcademicOrganization"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#AcademicOrganization"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesDataTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AcademicOrganization"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Public"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#Company"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1397,26 +1392,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#FundingInstitute"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#AcademicOrganization"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#paidBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#GovermentInstitute"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AcademicOrganization"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#Company"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesDataFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#Public"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1425,12 +1410,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AcademicOrganization"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#FundingInstitute"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#GovermentInstitute"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1439,32 +1424,60 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AcademicOrganization"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#AcademicOrganization"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#receivesInformationFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Company"/>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#Company"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#AcademicOrganization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#Company"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#AcademicOrganization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/beo#Company"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#competesWith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#University"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#University"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#AcademicOrganization"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#AcademicOrganization"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2025/1/untitled-ontology-129#Public"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Public"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
