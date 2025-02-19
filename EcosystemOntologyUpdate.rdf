@@ -143,9 +143,25 @@
     
 
 
-    <!-- https://purl.org/beo#AdditiveProvider -->
+    <!-- https://purl.org/beo#AccesoryManufacturer -->
 
-    <owl:Class rdf:about="https://purl.org/beo#AdditiveProvider">
+    <owl:Class rdf:about="https://purl.org/beo#AccesoryManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#AdditiveManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#AdditiveManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#AssetOwner -->
+
+    <owl:Class rdf:about="https://purl.org/beo#AssetOwner">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
@@ -175,6 +191,37 @@
     
 
 
+    <!-- https://purl.org/beo#BladeInspectionServiceProvider -->
+
+    <owl:Class rdf:about="https://purl.org/beo#BladeInspectionServiceProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#InspectionServiceProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#BladeInstallationServiceProvider -->
+
+    <owl:Class rdf:about="https://purl.org/beo#BladeInstallationServiceProvider">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.org/beo#BladeServiceCompany"/>
+                    <rdf:Description rdf:about="https://purl.org/beo#InstallationServiceProvider"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#BladeMaintenanceCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#BladeMaintenanceCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#BladeMaintenance&amp;RepairServiceCompany"/>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/beo#BladeManufacturer -->
 
     <owl:Class rdf:about="https://purl.org/beo#BladeManufacturer">
@@ -183,10 +230,34 @@
     
 
 
+    <!-- https://purl.org/beo#BladeMonitoringCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#BladeMonitoringCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#BladeServiceCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#BladeServiceCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#ServiceProvider"/>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/beo#BusinessProcessConsultantCompany -->
 
     <owl:Class rdf:about="https://purl.org/beo#BusinessProcessConsultantCompany">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#ConsultantCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#CableAccesoryManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#CableAccesoryManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#AccesoryManufacturer"/>
     </owl:Class>
     
 
@@ -239,6 +310,14 @@
     
 
 
+    <!-- https://purl.org/beo#ConsumableManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#ConsumableManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/beo#CustomerRelationManagementSoftwareCompany -->
 
     <owl:Class rdf:about="https://purl.org/beo#CustomerRelationManagementSoftwareCompany">
@@ -252,6 +331,14 @@
     <owl:Class rdf:about="https://purl.org/beo#DAASCompany">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
         <rdfs:comment>Data as a Service</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#DataAnalyticCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#DataAnalyticCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
@@ -288,14 +375,6 @@
     
 
 
-    <!-- https://purl.org/beo#ElectronicComponentManufacturer -->
-
-    <owl:Class rdf:about="https://purl.org/beo#ElectronicComponentManufacturer">
-        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
-    </owl:Class>
-    
-
-
     <!-- https://purl.org/beo#EnergyServiceProvider -->
 
     <owl:Class rdf:about="https://purl.org/beo#EnergyServiceProvider">
@@ -308,6 +387,14 @@
 
     <owl:Class rdf:about="https://purl.org/beo#EngineeringConsultantCompany">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#ConsultantCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#EquipmentHiringServiceProvider -->
+
+    <owl:Class rdf:about="https://purl.org/beo#EquipmentHiringServiceProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
@@ -326,7 +413,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
@@ -358,6 +445,22 @@
     
 
 
+    <!-- https://purl.org/beo#GearboxManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#GearboxManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#GeneratorManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#GeneratorManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/beo#GovermentAgency -->
 
     <owl:Class rdf:about="https://purl.org/beo#GovermentAgency">
@@ -378,6 +481,40 @@
 
     <owl:Class rdf:about="https://purl.org/beo#GridOperator">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Operator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#HardwareCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#HardwareCompany">
+        <owl:equivalentClass rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#IndependentPowerProducerCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#IndependentPowerProducerCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#PowerProducerCompany"/>
+        <rdfs:comment>IPP</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#InspectionServiceProvider -->
+
+    <owl:Class rdf:about="https://purl.org/beo#InspectionServiceProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#ServiceProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#InstallationServiceProvider -->
+
+    <owl:Class rdf:about="https://purl.org/beo#InstallationServiceProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#ServiceProvider"/>
     </owl:Class>
     
 
@@ -454,9 +591,25 @@
     
 
 
-    <!-- https://purl.org/beo#Manufacturer -->
+    <!-- https://purl.org/beo#ManpowerServiceProvider -->
 
-    <owl:Class rdf:about="https://purl.org/beo#Manufacturer">
+    <owl:Class rdf:about="https://purl.org/beo#ManpowerServiceProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#ServiceProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#ManuelInspectionServiceProvider -->
+
+    <owl:Class rdf:about="https://purl.org/beo#ManuelInspectionServiceProvider">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#InspectionServiceProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#ManufacturingCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#ManufacturingCompany">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
@@ -466,6 +619,14 @@
 
     <owl:Class rdf:about="https://purl.org/beo#MeteorologicalInstitute">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#MonitoringServiceCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#MonitoringServiceCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#ServiceProvider"/>
     </owl:Class>
     
 
@@ -486,15 +647,6 @@
     
 
 
-    <!-- https://purl.org/beo#OEM -->
-
-    <owl:Class rdf:about="https://purl.org/beo#OEM">
-        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
-        <rdfs:comment>WindTurbineManufacturer</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://purl.org/beo#Operator -->
 
     <owl:Class rdf:about="https://purl.org/beo#Operator">
@@ -509,9 +661,26 @@
     
 
 
+    <!-- https://purl.org/beo#OriginalEquipmentManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#OriginalEquipmentManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+        <rdfs:comment>OEM</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/beo#PCBManufacturer -->
 
     <owl:Class rdf:about="https://purl.org/beo#PCBManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#Planner -->
+
+    <owl:Class rdf:about="https://purl.org/beo#Planner">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
@@ -529,6 +698,22 @@
 
     <owl:Class rdf:about="https://purl.org/beo#PoliticalInstitute">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Institute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#PowerProducerCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#PowerProducerCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#PowerRegulationServiceCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#PowerRegulationServiceCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
 
@@ -573,11 +758,35 @@
     
 
 
+    <!-- https://purl.org/beo#RollingBearingComponentManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#RollingBearingComponentManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#RollingBearingManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#RollingBearingManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/beo#SAASCompany -->
 
     <owl:Class rdf:about="https://purl.org/beo#SAASCompany">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
         <rdfs:comment>Software as a Service</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#SCADASoftwareCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#SCADASoftwareCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#SoftwareCompany"/>
     </owl:Class>
     
 
@@ -610,6 +819,7 @@
 
     <owl:Class rdf:about="https://purl.org/beo#ServiceProvider">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+        <rdfs:comment>ServiceCompany</rdfs:comment>
     </owl:Class>
     
 
@@ -618,6 +828,14 @@
 
     <owl:Class rdf:about="https://purl.org/beo#SoftwareCompany">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#SoftwareConsultant -->
+
+    <owl:Class rdf:about="https://purl.org/beo#SoftwareConsultant">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#EngineeringConsultantCompany"/>
     </owl:Class>
     
 
@@ -662,6 +880,30 @@
     
 
 
+    <!-- https://purl.org/beo#SubseaCableManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#SubseaCableManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#SurveyCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#SurveyCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#Surveyor -->
+
+    <owl:Class rdf:about="https://purl.org/beo#Surveyor">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/beo#SustainabilitySoftwarePlatformCompany -->
 
     <owl:Class rdf:about="https://purl.org/beo#SustainabilitySoftwarePlatformCompany">
@@ -678,9 +920,25 @@
     
 
 
+    <!-- https://purl.org/beo#TestingAuthority -->
+
+    <owl:Class rdf:about="https://purl.org/beo#TestingAuthority">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Non-ProfitOrganization"/>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/beo#ThirdOrderCompany -->
 
     <owl:Class rdf:about="https://purl.org/beo#ThirdOrderCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#ThirdTierSupplier -->
+
+    <owl:Class rdf:about="https://purl.org/beo#ThirdTierSupplier">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
     </owl:Class>
     
@@ -718,6 +976,22 @@
     
 
 
+    <!-- https://purl.org/beo#WindParkOperator -->
+
+    <owl:Class rdf:about="https://purl.org/beo#WindParkOperator">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Operator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#WindParkOwner -->
+
+    <owl:Class rdf:about="https://purl.org/beo#WindParkOwner">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#AssetOwner"/>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/beo#WindResourceConsultingCompany -->
 
     <owl:Class rdf:about="https://purl.org/beo#WindResourceConsultingCompany">
@@ -726,10 +1000,11 @@
     
 
 
-    <!-- https://purl.org/beo#WindTurbineOperator -->
+    <!-- https://purl.org/beo#WindTurbineManufacturer -->
 
-    <owl:Class rdf:about="https://purl.org/beo#WindTurbineOperator">
-        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    <owl:Class rdf:about="https://purl.org/beo#WindTurbineManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#OriginalEquipmentManufacturer"/>
+        <rdfs:comment>WindTurbineManufacturer</rdfs:comment>
     </owl:Class>
     
 
@@ -737,7 +1012,7 @@
     <!-- https://purl.org/beo#WindTurbineOwner -->
 
     <owl:Class rdf:about="https://purl.org/beo#WindTurbineOwner">
-        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#WindParkOwner"/>
     </owl:Class>
     
 
@@ -746,6 +1021,38 @@
 
     <owl:Class rdf:about="https://purl.org/beo#WindTurbineProjectDeveloper">
         <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#Workshop -->
+
+    <owl:Class rdf:about="https://purl.org/beo#Workshop">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#BladeMaintenance&amp;RepairServiceCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#BladeMaintenance&amp;RepairServiceCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#Electric&amp;ElectronicComponentManufacturer -->
+
+    <owl:Class rdf:about="https://purl.org/beo#Electric&amp;ElectronicComponentManufacturer">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/beo#Maintenance&amp;RepairServiceCompany -->
+
+    <owl:Class rdf:about="https://purl.org/beo#Maintenance&amp;RepairServiceCompany">
+        <rdfs:subClassOf rdf:resource="https://purl.org/beo#ServiceProvider"/>
     </owl:Class>
     
 
@@ -783,19 +1090,19 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
                 <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -869,13 +1176,13 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -899,13 +1206,13 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SystemIntegrator"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -943,7 +1250,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ElectronicComponentManufacturer"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Electric&amp;ElectronicComponentManufacturer"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
@@ -981,7 +1288,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Manufacturer"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -999,7 +1306,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Manufacturer"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1017,7 +1324,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Manufacturer"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1049,55 +1356,55 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Manufacturer"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Manufacturer"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Manufacturer"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
                 <owl:someValuesFrom rdf:resource="https://purl.org/beo#ResearchInstitute"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
@@ -1197,25 +1504,25 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1263,6 +1570,351 @@
     <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization15">
         <rdf:type rdf:resource="https://purl.org/beo#EngineeringConsultantCompany"/>
         <rdf:type rdf:resource="https://purl.org/beo#MagnetManufacturer"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManufacturingCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization16 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization16">
+        <rdf:type rdf:resource="https://purl.org/beo#SoftwareConsultant"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#DataAnalyticCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#CloudProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization17 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization17">
+        <rdf:type rdf:resource="https://purl.org/beo#BladeMaintenance&amp;RepairServiceCompany"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#BladeMaintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#BladeMaintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ConsumableManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#EquipmentHiringServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization18 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization18">
+        <rdf:type rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Planner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Planner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Surveyor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SurveyCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Planner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization19 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization19">
+        <rdf:type rdf:resource="https://purl.org/beo#InstallationServiceProvider"/>
+        <rdf:type rdf:resource="https://purl.org/beo#ServiceProvider"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
     </owl:NamedIndividual>
     
 
@@ -1274,7 +1926,775 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization20 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization20">
+        <rdf:type rdf:resource="https://purl.org/beo#RollingBearingManufacturer"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#University"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#TestingAuthority"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GearboxManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GeneratorManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GeneratorManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GearboxManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#GeneratorManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#RollingBearingComponentManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#RollingBearingComponentManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#RollingBearingComponentManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization21 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization21">
+        <rdf:type rdf:resource="https://purl.org/beo#BladeMonitoringCompany"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ConditionMonitoringServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ManuelInspectionServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindParkOperator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#BladeInstallationServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#BladeInstallationServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization22 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization22">
+        <rdf:type rdf:resource="https://purl.org/beo#CableAccesoryManufacturer"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SubseaCableManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SubseaCableManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SubseaCableManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SteelManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SubseaCableManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SubseaCableManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SteelManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SteelManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SteelManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SubseaCableManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization23 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization23">
+        <rdf:type rdf:resource="https://purl.org/beo#SCADASoftwareCompany"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#MonitoringServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#PowerRegulationServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#AssetOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#IndependentPowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindParkOperator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#AssetOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#IndependentPowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#AssetOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#IndependentPowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#AssetOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#IndependentPowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#HardwareCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#HardwareCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#HardwareCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#HardwareCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization24 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization24">
+        <rdf:type rdf:resource="https://purl.org/beo#Electric&amp;ElectronicComponentManufacturer"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#IndependentPowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Electric&amp;ElectronicComponentManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#IndependentPowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#IndependentPowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#IndependentPowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Operator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ThirdTierSupplier"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ThirdTierSupplier"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization25 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization25">
+        <rdf:type rdf:resource="https://purl.org/beo#WindParkOperator"/>
+        <rdf:type rdf:resource="https://purl.org/beo#Maintenance&amp;RepairServiceCompany"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#PowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindParkOperator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Assosiation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#PowerProducerCompany"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindParkOperator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Workshop"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Workshop"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#Assosiation"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization26 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization26">
+        <rdf:type rdf:resource="https://purl.org/beo#ElectricMotorManufacturer"/>
+        <rdf:type rdf:resource="https://purl.org/beo#GeneratorManufacturer"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ElectricMotorManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#RawMaterialProducer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#RawMaterialProducer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#RawMaterialProducer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/beo#Organization27 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization27">
+        <rdf:type rdf:resource="https://purl.org/beo#ManpowerServiceProvider"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#competesWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#conflictsWith"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
@@ -1289,7 +2709,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#AdditiveProvider"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#AdditiveManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1307,19 +2727,19 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1331,13 +2751,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOperator"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindParkOperator"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1348,14 +2762,20 @@
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
                 <owl:someValuesFrom rdf:resource="https://purl.org/beo#ServiceProvider"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1367,7 +2787,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineOperator"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindParkOperator"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
@@ -1405,7 +2825,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1423,7 +2843,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1447,7 +2867,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1477,7 +2897,7 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1607,25 +3027,25 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#deliversTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#paidBy"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1740,11 +3160,11 @@
     <!-- https://purl.org/beo#Organization8 -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/beo#Organization8">
-        <rdf:type rdf:resource="https://purl.org/beo#WindTurbineOperator"/>
+        <rdf:type rdf:resource="https://purl.org/beo#WindParkOperator"/>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#collaboratesWith"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1768,19 +3188,19 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
                 <owl:someValuesFrom rdf:resource="https://purl.org/beo#SoftwareCompany"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/beo#givesDataTo"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#givesInformationTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -1792,25 +3212,25 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#paysTo"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#receivesDataFrom"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#receivesFrom"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.org/beo#receivesInformationFrom"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/beo#OEM"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/beo#WindTurbineManufacturer"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
